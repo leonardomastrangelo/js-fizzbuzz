@@ -8,14 +8,14 @@ for (let y = 1; y <= 100; y++) {
 
     // conditions
     if (y % 3 === 0 && y % 5 === 0) {
-        type = "Fizz"
-        bg = "fizz-bg"
+        type = "FizzBuzz"
+        bg = "fizzBuzz-bg"
     } else if (y % 5 === 0) {
         type = "Buzz"
         bg = "buzz-bg"
     } else if (y % 3 === 0) {
-        type = "FizzBuzz"
-        bg = "fizzBuzz-bg"
+        type = "Fizz"
+        bg = "fizz-bg"
     } else {
         type = y
         bg = "standard-bg"
@@ -24,8 +24,9 @@ for (let y = 1; y <= 100; y++) {
     // creation
     const boxEl = document.createElement("div")
     boxEl.className = `square ${bg} d-flex justify-content-center align-items-center`
-    boxEl.innerHTML = `${type}`
+    boxEl.innerHTML = `<button class="border-0 bg-transparent">${type}</button>`
     game.append(boxEl)
 }
+
 
 
