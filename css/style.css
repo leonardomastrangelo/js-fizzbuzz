@@ -2,13 +2,14 @@
     --prussian-blue: #003049ff;
     --fire-engine-red:#d62828ff;
     --orange-wheel: #f77f00ff;
-    --xanthous: #fcbf49ff;
+    --xanthous: rgb(58, 176, 47);
     --vanilla: #eae2b7ff;
 }
 
 body {
     font-family: 'Roboto', sans-serif;
     background-color: var(--prussian-blue);
+    font-size: 20px;
 }
 
 .wrapper{
@@ -16,21 +17,19 @@ body {
     margin: 0 auto;
 }
 
-#game {
-    background-color: var(--xanthous);
-}
-
 /* squares */
 .square
 {
-    width: 200px;
-    height: 200px;
+    width: 120px;
+    height: 120px;
+    margin: 10px;
+    border-radius: 10px;
 }
 .standard-bg {
     background-color: cadetblue;
 }
 .fizz-bg {
-    background-color: var(--vanilla);
+    background-color: var(--xanthous);
 }
 .buzz-bg {
     background-color: var(--orange-wheel);
