@@ -1,3 +1,22 @@
+:root {
+    --prussian-blue: #003049ff;
+    --fire-engine-red:#d62828ff;
+    --orange-wheel: #f77f00ff;
+    --xanthous: #fcbf49ff;
+    --vanilla: #eae2b7ff;
+}
+
 body {
     font-family: 'Roboto', sans-serif;
+    background-color: var(--prussian-blue);
+}
+
+#game {
+    background-color: var(--xanthous);
+}
+
+.square
+{
+    width: 200px;
+    height: 200px;
 }
