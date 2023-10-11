@@ -15,8 +15,21 @@ body {
     background-color: var(--xanthous);
 }
 
+/* squares */
 .square
 {
     width: 200px;
     height: 200px;
+}
+.standard-bg {
+    background-color: cadetblue;
+}
+.fizz-bg {
+    background-color: var(--vanilla);
+}
+.buzz-bg {
+    background-color: var(--orange-wheel);
+}
+.fizzBuzz-bg {
+    background-color: var(--fire-engine-red);
 }
