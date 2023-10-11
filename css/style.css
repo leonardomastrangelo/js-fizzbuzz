@@ -1,3 +1,4 @@
+/* general */
 :root {
     --prussian-blue: #003049ff;
     --fire-engine-red:#d62828ff;
@@ -5,13 +6,11 @@
     --xanthous: rgb(58, 176, 47);
     --vanilla: #eae2b7ff;
 }
-
 body {
     font-family: 'Roboto', sans-serif;
     background-color: var(--prussian-blue);
     font-size: 20px;
 }
-
 .wrapper{
     width: 1400px;
     margin: 0 auto;
@@ -24,6 +23,8 @@ body {
     height: 120px;
     margin: 10px;
     border-radius: 10px;
+    transition: all 0.3s ease-in-out;
+    position: relative;
 }
 .standard-bg {
     background-color: cadetblue;
@@ -36,4 +37,21 @@ body {
 }
 .fizzBuzz-bg {
     background-color: var(--fire-engine-red);
+}
+
+/* hover */
+.square:hover {
+    scale: 1.1;
+}
+.fizzBuzz-bg:hover{
+    background-color: #ff002b;
+}
+.buzz-bg:hover{
+    background-color: #fb6107;
+}
+.fizz-bg:hover{
+    background-color: #008000;
+}
+.standard-bg:hover{
+    background-color: #219ebc;
 }
